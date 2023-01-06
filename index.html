@@ -10,23 +10,34 @@
 
   <iframe src="result (2).html" width="50%" height="500" frameborder="0" scrolling="no" name="myiframe"></iframe>
 
-  <div>You entered this website using phone</div>
+  <div class="request">
+  <center>
+    <h1>Allign your phone hotizontally to get best experience possible! </h1>
+  </center>
+   </div>
   
 </body>
 </html>
 
 
 <style>
-  div{
+  .request{
     display: none;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (orientation: landscape) {
     iframe {
-      display: none;
+      width: 100%;
+      height: 100%;
     }
-    div {
+  }
+
+  @media only screen and (orientation: portrait) {
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+    .request{
       display: block;
     }
-    
   }
 </style>
