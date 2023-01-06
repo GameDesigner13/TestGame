@@ -10,14 +10,20 @@
 
   <iframe src="result (2).html" width="50%" height="500" frameborder="0" scrolling="no" name="myiframe"></iframe>
 
-  <div class="request">
+  <div class="pc">
   <center>
-    <h1> (duz) </h1>
+    <h1> desktop </h1>
   </center>
    </div>
-   <div class="check">
+   <div class="landscape">
     <center>
-      <h1> eyri </h1>
+      <h1> landscape </h1>
+    </center>
+   </div>
+
+   <div class="portrait">
+    <center>
+      <h1> portrait </h1>
     </center>
    </div>
   
@@ -26,27 +32,40 @@
 
 
 <style>
-  .request{
+  iframe{
     display: none;
   }
-  .check{
+  .portrait{
+    display: none;
+  }
+  .landscape{
     display: none;
   }
 
+  .pc{
+    display: none;
+  }
 
-  html.mobile {
-    
-    @media only screen and (orientation:landscape){
-      .check{
-        display: block;
-      }
+  @media only screen and (orientation: landscape) {
+    html.mobile .landscape{
+      display: block;
+    }     
+  }
+
+  @media only screen and (orientation: portrait) {
+    html.mobile .portrait{
+      display: block;
+    }     
+  }
+
+
+  @media only screen and (min-width: 900px){
+    html.desktop .pc{
+      display: block;
+
     }
-
   }
   
-   
-
-
 
 
 </style>
@@ -61,4 +80,5 @@
     }
   }
 </script>
+
 
