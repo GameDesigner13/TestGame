@@ -24,14 +24,23 @@
   .request{
     display: none;
   }
-  @media only screen and (orientation: landscape) {
+  
+  @media only screen and (min-width: 901px) {
+    iframe {
+     width: 100%;
+     height: 500px;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) and (orientation: landscape) {
     iframe {
       width: 100%;
       height: 100%;
     }
   }
 
-  @media only screen and (orientation: portrait) {
+  @media only screen and (max-width: 600px) and (orientation: portrait) {
     iframe {
       width: 100%;
       height: 500px;
