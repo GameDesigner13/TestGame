@@ -41,12 +41,19 @@
     display: none;
   }
 
-  @media only screen and (orientation: landscape) {
-    html.mobile .game-mobile-ladscape{
+@media only screen and (orientation: portrait) {
+    html.mobile .game-mobile{
       display: block;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 95vw;
+      height: 90vh
       
-    }     
-  }
+    }   
 
   @media only screen and (orientation: portrait) {
     html.mobile .game-mobile{
