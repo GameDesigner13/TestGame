@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minumum-scale=0.5">
   <title>CraneGame</title>
 </head>
  <body onload="setDeviceClass()">
 
   <iframe class="game-pc" src="fixed-landscape.html"  ></iframe>
-  <iframe class="game-mobile" src="fixed-landscape.html" width="480" height="360" ></iframe>
-  <iframe class="landscape" src="fixed-landscape.html"></iframe>
+  <iframe class="game-mobile" src="fixed-landscape.html" ></iframe>
+  <iframe class="landscape" src="fixed-landscape.html" ></iframe>
 
   <div class="text-pc">
   <center>
@@ -49,7 +49,9 @@
       top: 0;
       bottom: 0;
       left: 0;
-      right: 0;  
+      right: 0;
+      height: 650px;
+      width: 100%;   
     }     
 
   }
@@ -63,9 +65,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 90hv;
-      width: 95wv;
-      
+      height: 500px;
+      width: 100vw;
     }   
     
   }
@@ -81,8 +82,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 720px;
-      width: 1280px;
+      height: 600px;
+      width: 100vw;
 
     }
 
