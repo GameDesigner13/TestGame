@@ -8,7 +8,7 @@
 </head>
  <body onload="setDeviceClass()">
    
-<iframe class="game-pc" src="fixed-landscape.html"  ></iframe>
+<iframe id="pc" class="game-pc" src="fixed-landscape.html"  ></iframe>
   <iframe id="pc" class="game-mobile" src="fixed-landscape.html" ></iframe>
   <iframe id="pc" class="landscape" src="fixed-landscape.html" ></iframe>
   <button id="fullscreen-button">Fullscreen</button>
@@ -112,12 +112,14 @@
 
   button.addEventListener("click", function() {
     iframe.contentDocument.body.requestFullscreen();
-    
-     document.addEventListener("fullscreenchange", function() {
+  });
+
+  document.addEventListener("fullscreenchange", function() {
     if (document.fullscreenElement) {
       button.style.display = "none";
     } else {
       button.style.display = "block";
     }
   });
+
 </script>
