@@ -7,8 +7,8 @@
   <title>CraneGame</title>
 </head>
  <body onload="setDeviceClass()">
-
-  <iframe class="game-pc" src="fixed-landscape.html"  ></iframe>
+   
+<iframe class="game-pc" src="fixed-landscape.html"  ></iframe>
   <iframe id="pc" class="game-mobile" src="fixed-landscape.html" ></iframe>
   <iframe id="pc" class="landscape" src="fixed-landscape.html" ></iframe>
   <button id="fullscreen-button">Fullscreen</button>
@@ -51,8 +51,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 650px;
-      width: 100%;   
+      height: 90%;
+      width: 90%;   
     }     
 
   }
@@ -66,7 +66,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 500px;
+      height: 350px;
       width: 100vw;
     }   
     
@@ -96,7 +96,7 @@
 
 
 <script>
-  function setDeviceClass() {
+ function setDeviceClass() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       document.querySelector('html').classList.add('mobile');
     } else {
