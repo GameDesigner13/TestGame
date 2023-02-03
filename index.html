@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minumum-scale=0.5">
   <title>CraneGame</title>
 </head>
- <body onload="setDeviceClass()">
+ <body>
    
-<iframe id="pc" class="game-pc" src="fixed-landscape.html"  ></iframe>
-  <iframe id="pc" class="game-mobile" src="fixed-landscape.html" ></iframe>
-  <iframe id="pc" class="landscape" src="fixed-landscape.html" ></iframe>
-  <button id="fullscreen-button">Fullscreen</button>
 
+<iframe src="fixed-landscape.html" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+</iframe>
   <div class="text-pc">
   <center>
     <h1>Click To Start!</h1>
@@ -30,73 +28,10 @@
 </html>
 
 
-<style>
-   button{
-    z-index: 2;
-    position: relative;
-  }
-  .text-pc{
-    display: none;
-  }
-  .text-portrait{
-    display: none;
-  }
 
-  iframe {
-    display: none;
-  }
-
-  @media only screen and (orientation: landscape) {
-    html.mobile .landscape { 
-      display: block;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 90%;
-      width: 90%;   
-    }     
-
-  }
-
-  @media only screen and (orientation: portrait) {
-    html.mobile .game-mobile{
-      display: block;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 350px;
-      width: 100vw;
-    }   
-    
-  }
-
-
-  @media only screen and (min-width: 900px){
-    html.desktop .game-pc {
-    
-      display: block;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 600px;
-      width: 100vw;
-
-    }
-
-  }
   
 
 
-</style>
 
 
 <script>
